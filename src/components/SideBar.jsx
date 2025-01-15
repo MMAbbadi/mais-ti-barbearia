@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './SideBar.module.css'
+import { FaHome,FaBook,FaConciergeBell,FaHeart } from "react-icons/fa";
+import { IoIosMenu } from "react-icons/io";
 
 const SideBar = () => {
   return (
@@ -7,16 +9,26 @@ const SideBar = () => {
     {/* SideBar */}
         <nav>
             <div className={classes.logo}>
-                <img src="" alt="" />
+                <FaHome />
             </div>
             <div>
                 <nav>
                     <ul>
-                        <li>Menu</li>
-                        <li>Curtidos</li>
-                        <li>Home</li>
-                        <li>Agendamentos</li>
-                        <li>Serviços</li>
+                        <li>
+                            <IoIosMenu />
+                        </li>
+                        <li>
+                            <FaHeart />
+                        </li>
+                        <li>
+                            <FaHome />
+                        </li>
+                        <li>
+                            <FaConciergeBell />
+                        </li>
+                        <li>
+                            <FaBook />
+                        </li>
                     </ul>
                 </nav>
             </div>
