@@ -2,6 +2,7 @@ import React from "react";
 import SideBar from "./components/SideBar";
 import Home from "./components/Home";
 import Favorites from "./components/Favorites"
+import { Appointment } from "./components/Appointment";
 import Footer from "./components/Footer"
 import "./App.css";
 
@@ -12,7 +13,7 @@ const App = () => {
         <SideBar />
       </aside>
       <main>
-        <Home />
+        <Appointment />
       </main>
       <Footer />
     </div>
