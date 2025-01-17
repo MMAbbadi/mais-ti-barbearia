@@ -1,0 +1,80 @@
+/* SideBar.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .logo svg{
+    color: #333;
+  }
+  
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .item {
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item:hover {
+    background-color: #555;
+  }
+  
+  .item svg {
+    color: rgb(41, 6, 6);
+  }
+  
+  .lowSideBar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .side_button{
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .side_button svg {
+    color: rgb(41, 6, 6);
+  }
+  
+  .side_button svg:hover {
+    color: white;
+  }
+  
+  

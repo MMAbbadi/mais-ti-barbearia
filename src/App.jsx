@@ -1,13 +1,22 @@
-import './App.css'
-import Home from './components/Home'
+import React from "react";
+import SideBar from "./components/SideBar";
+import Home from "./components/Home";
+import Favorites from "./components/Favorites"
+import Footer from "./components/Footer"
+import "./App.css";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Home />
-    </>
-  )
-}
+    <div className="app">
+      <aside>
+        <SideBar />
+      </aside>
+      <main>
+        <Home />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;

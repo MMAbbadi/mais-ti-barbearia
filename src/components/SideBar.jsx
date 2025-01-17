@@ -1,37 +1,52 @@
 import React from 'react'
-import classes from './SideBar.module.css'
-import { FaHome,FaBook,FaConciergeBell,FaHeart } from "react-icons/fa";
+import './SideBar.css'
+import { FaHome,FaBook,FaConciergeBell,FaHeart,FaShoppingBag  } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
+import { BiSolidShoppingBagAlt,BiExit } from "react-icons/bi";
 
 const SideBar = () => {
   return (
     <>
     {/* SideBar */}
-        <nav>
-            <div className={classes.logo}>
+        <nav className="sidebar">
+            <div className="logo">
                 <FaHome />
             </div>
             <div>
                 <nav>
-                    <ul>
-                        <li>
+                    <ul className="items">
+                        <li className="item">
                             <IoIosMenu />
                         </li>
-                        <li>
+                        <li className="item">
                             <FaHeart />
                         </li>
-                        <li>
+                        <li className="item">
                             <FaHome />
                         </li>
-                        <li>
+                        <li className="item">
                             <FaConciergeBell />
                         </li>
-                        <li>
+                        <li className="item">
                             <FaBook />
                         </li>
                     </ul>
                 </nav>
             </div>
+
+            <ul className="lowSideBar">
+            {/*Lista de Compra*/}
+                <li className="side_button">
+                <FaShoppingBag />
+                </li>
+            {/*Lista de Compra*/}
+
+            {/*LogOut*/}
+                <li className="side_button">
+                    <BiExit />
+                </li>
+            {/*LogOut*/}
+            </ul>
         </nav>
     {/* SideBar */}
     </>
