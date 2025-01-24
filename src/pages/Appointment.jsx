@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Appointment.module.css'
 
-export const Appointment = () => {
+export default function Appointment() {
   return (
     <div>
         <main className='app-container'>

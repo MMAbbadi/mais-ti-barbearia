@@ -1,5 +1,5 @@
 import React from 'react'
-import SimpleSlider from './SimpleSlider';
+import SimpleSlider from '../components/SimpleSlider';
 import { FaMapMarkerAlt,FaConciergeBell,FaStar   } from "react-icons/fa";
 import { BiSolidDiscount,BiSolidGrid,BiHappyHeartEyes } from "react-icons/bi";
 import './Home.css'
