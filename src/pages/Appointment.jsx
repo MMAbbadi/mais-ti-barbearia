@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from 'react-calendar'
 import classes from './Appointment.module.css'
 
 export default function Appointment() {
@@ -19,8 +20,9 @@ export default function Appointment() {
                 </section>
 
                 <section className={classes.calendario}> 
-                    <div src="" alt="" className={classes.displayCal}/>
+                    <Calendar />
                 </section>
+
             </div>
         </main>
     </div>
