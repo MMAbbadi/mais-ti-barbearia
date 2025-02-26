@@ -1,25 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import SimpleSlider from '../components/SimpleSlider';
-import { FaMapMarkerAlt,FaConciergeBell,FaStar   } from "react-icons/fa";
-import { BiSolidDiscount,BiSolidGrid,BiHappyHeartEyes } from "react-icons/bi";
-import './Home.css'
+import { FaMapMarkerAlt, FaConciergeBell, FaStar } from "react-icons/fa";
+import { BiSolidDiscount, BiSolidGrid, BiHappyHeartEyes } from "react-icons/bi";
+import './Home.css';
+
 const Home = () => {
   return (
     <div>
       <main className="app-container">
-        {/* Barra de busca */}
+        {/* Barra de busca e botão de cadastro */}
         <header className="header">
           <input
-            type="text"
+            type="text" 
             className="search-bar"
             placeholder="O que Você Está Procurando?"
           />
+          <div className="header-buttons">
+            <Link to="/register" className="register-button">Cadastro</Link>
+          </div>
         </header>
 
         {/* Carrossel de imagens */}
         <div className="carousel">
-          <SimpleSlider/>
+          <SimpleSlider />
         </div>
 
         {/* Categorias */}
@@ -68,10 +72,10 @@ const Home = () => {
               {/* <button className="favorite-button">❤️</button> */}
             </div>
           ))}
-        </div>  
+        </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

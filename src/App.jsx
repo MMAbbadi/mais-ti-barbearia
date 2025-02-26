@@ -6,6 +6,9 @@ import Favorites from "./pages/Favorites"
 import Appointment from "./pages/Appointment";
 import Footer from "./components/Footer"
 import "./App.css";
+import Register from "./pages/Register";
+
+
 
 const App = () => {
   return (
@@ -18,6 +21,7 @@ const App = () => {
             <Route path="/" element={<Home />}/>
             <Route path="/favorites" element={<Favorites />}/>
             <Route path="/appointment" element={<Appointment />}/>
+            <Route path="/register" element={<Register />} />
           </Routes>
       </main>
       <Footer />

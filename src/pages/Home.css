@@ -19,6 +19,49 @@
     box-sizing: border-box;
   }
   
+  /* Botões no header */
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos nos cantos */
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Caixa de busca */
+.search-bar {
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botões no canto direito */
+.header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.register-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
   .search-bar {
     width: 80%;
     height: 40px;
