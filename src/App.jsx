@@ -7,6 +7,7 @@ import Appointment from "./pages/Appointment";
 import Footer from "./components/Footer"
 import "./App.css";
 import Register from "./pages/Register";
+import Login from "./pages/login";
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/favorites" element={<Favorites />}/>
             <Route path="/appointment" element={<Appointment />}/>
             <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login/>}/>
           </Routes>
       </main>
       <Footer />

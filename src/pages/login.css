@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: fixed;
+  }
+  
+  .login-container {
+    position: relative; 
+    z-index: 1; 
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: visible;
+    color: white;
+  }
+  
+  .login-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: radial-gradient(circle at 50% 50%, 
+      rgba(85, 85, 85, 0.8) 0%, 
+      rgba(40, 40, 40, 0.6) 100%);
+    filter: blur(70px);
+    z-index: -1;
+    pointer-events: none; /* Permite clicar através do elemento */
+  }
+  
+  /* Ajuste nos inputs e botão */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #777;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Botão de login */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0975e9;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }

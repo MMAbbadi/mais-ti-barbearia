@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <main className="app-container">
-        {/* Barra de busca e botão de cadastro */}
+        {/* Barra de busca e botões de cadastro/login */}
         <header className="header">
           <input
             type="text" 
@@ -18,6 +18,7 @@ const Home = () => {
           />
           <div className="header-buttons">
             <Link to="/register" className="register-button">Cadastro</Link>
+            <Link to="/login" className="login-button">Login</Link>
           </div>
         </header>
 
@@ -69,7 +70,7 @@ const Home = () => {
             <div key={index} className="item">
               <img src={item.logo} alt={item.name} className="item-logo" />
               <p>{item.name}</p>
-              {/* <button className="favorite-button">❤️</button> */}
+               {/* <button className="favorite-button">❤️</button> */}
             </div>
           ))}
         </div>
