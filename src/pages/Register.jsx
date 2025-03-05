@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-//Styles
 import "./Register.css";
 
 const Register = () => {
@@ -10,7 +8,10 @@ const Register = () => {
     email: "",
     password: "",
     confirmPassword: "",
-    serviceProvider: false, // Define se é cliente ou prestador de serviço
+    serviceProvider: false,
+    atendeDomicilio: "",
+    servicos: "",
+    contato: "",
   });
 
   const navigate = useNavigate(); // Para redirecionamento após cadastro
@@ -52,20 +53,116 @@ const Register = () => {
 
   return (
     <div className="register-container">
-      <h2>Cadastro</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Nome" value={formData.name} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Senha" value={formData.password} onChange={handleChange} required />
-        <input type="password" name="confirmPassword" placeholder="Confirme a Senha" value={formData.confirmPassword} onChange={handleChange} required />
+      <div className="register-box">
+        <h2>Cadastro</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nome"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <label>
-          <input type="checkbox" name="serviceProvider" checked={formData.serviceProvider} onChange={handleChange} />
-          Sou um prestador de serviço
-        </label>
+          <div className="input-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <button type="submit">Cadastrar</button>
-      </form>
+          <div className="input-group">
+            <input
+              type="password"
+              name="password"
+              placeholder="Senha"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirme a Senha"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          {/* Checkbox para prestador de serviço */}
+          <div className="input-group">
+            <label>
+              <input
+                type="checkbox"
+                name="serviceProvider"
+                checked={formData.serviceProvider}
+                onChange={handleChange}
+              />
+              Sou um prestador de serviço
+            </label>
+          </div>
+
+          {/* Inputs extras aparecem se for prestador de serviço */}
+          {formData.serviceProvider && (
+            <>
+              <div className="input-group">
+                <label>Atende a domicílio?</label>
+                <select
+                  name="atendeDomicilio"
+                  value={formData.atendeDomicilio}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Selecione</option>
+                  <option value="sim">Sim</option>
+                  <option value="não">Não</option>
+                </select>
+              </div>
+
+              <div className="input-group">
+                <input
+                  type="text"
+                  name="servicos"
+                  placeholder="Tipos de serviços oferecidos"
+                  value={formData.servicos}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="input-group">
+                <input
+                  type="text"
+                  name="contato"
+                  placeholder="Contato"
+                  value={formData.contato}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </>
+          )}
+
+          <button type="submit">Cadastrar</button>
+        </form>
+
+        <div className="login-link">
+          <p>
+            Já tem uma conta? <a href="/login">Faça login</a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
