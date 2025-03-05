@@ -1,46 +1,123 @@
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    position: fixed;
-  }
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #1e1e1e, #2c3e50);
+}
 
-  .register-container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6); /* Fundo escuro translúcido */
-    color: white; /* Deixar o texto mais visível */
-  }
+/* Container do registro */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
-  .register-container::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #555;
-    filter: blur(500px);
-    color: white;
-  }
+/* Caixa do registro */
+.register-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: white;
+}
 
-  input,
-  button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-  }
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
 
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+/* Campos de entrada */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
 
-  button:hover {
-    background-color: #0056b3;
-  }
+/* Container específico do checkbox */
+.input-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Estilo do checkbox e do label */
+.input-group input[type="checkbox"] {
+  margin-right: 8px;
+  width: auto;
+  height: auto;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 1px; 
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  background: #222;
+  color: white;
+  font-size: 16px;
+}
+
+.input-group input::placeholder,
+.input-group select {
+  color: #aaa;
+}
+
+/* Botão de cadastro */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #ffcc00;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e6b800;
+}
+
+/* Texto para voltar ao login */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.login-link a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

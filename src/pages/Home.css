@@ -1,31 +1,31 @@
 /* Home.css */
 
 .app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #f9f9f9; 
-  }
-  
-  /* Header e barra de busca */
-  .header {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #ccc; 
-    box-sizing: border-box;
-  }
-  
-  /* Botões no header */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Header e barra de busca */
 .header {
   width: 100%;
   padding: 10px 20px;
   background-color: #fff;
   display: flex;
-  justify-content: space-between; /* Alinha os elementos nos cantos */
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Botões no header */
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -48,132 +48,125 @@
   gap: 15px;
 }
 
-.register-button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-
-.register-button:hover {
-  background-color: #0056b3;
-}
-
+/* Home.css */
+.register-button,
 .login-button {
-  padding: 8px 16px;
+  padding: 12px 20px;
+  min-width: 120px;
   background-color: #007bff;
   color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
+.register-button:hover,
 .login-button:hover {
   background-color: #0056b3;
 }
 
-  .search-bar {
-    width: 80%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  /* Carrossel de imagens */
-  .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    margin-bottom: 25px;
-    background-color: #fafafa;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* Botões de categorias */
-  .categories {
-    display: flex; 
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .categories button {
-    padding: 0 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    gap: 5px;
-    display: flex;
-    align-items: center;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .categories button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Lista de itens */
-  .item-list {
-    background-color: red;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    /* repeat(auto-fit, minmax(150px, 1fr)); */
-    justify-self: center;
-    align-self: center;
-    gap: 75px;
-    padding: 20px;
-    padding-right: 60px;
-    background-color: #f9f9f9;
-  }
-  
-  .item {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .item-logo {
-    width: 100%;
-    height: 70%;
-    margin-bottom: 10px;
-  }
-  
-  .favorite-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    font-size: 18px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .favorite-button:hover {
-    color: red;
-  }
+.search-bar {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Carrossel de imagens */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 25px;
+  background-color: #fafafa;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Botões de categorias */
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.categories button {
+  padding: 0 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categories button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de itens */
+.item-list {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+  gap: 75px;
+  padding: 20px;
+  padding-right: 60px;
+  background-color: #f9f9f9;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.item-logo {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.favorite-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.favorite-button:hover {
+  color: red;
+}
