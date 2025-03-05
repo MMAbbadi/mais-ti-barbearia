@@ -6,14 +6,14 @@ export default function Favorites() {
     <>
       <div className="favorite-list">
         {[
-          { name: 'Barber', logo: 'https://via.placeholder.com/250x550' },
-          { name: 'RH Barbearia', logo: 'https://via.placeholder.com/100' },
-          { name: 'A Barbearia', logo: 'https://via.placeholder.com/100' },
-          { name: 'Lisboa Barbearia', logo: 'https://via.placeholder.com/100' },
-          { name: 'Barbearia Premium', logo: 'https://via.placeholder.com/100' },
-          { name: 'Ariel Lima Nail', logo: 'https://via.placeholder.com/100' },
-          { name: 'Nail Polish', logo: 'https://via.placeholder.com/100' },
-          { name: 'You Nails', logo: 'https://via.placeholder.com/100' },
+          { name: 'Barber', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'RH Barbearia', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'A Barbearia', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'Lisboa Barbearia', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'Barbearia Premium', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'Ariel Lima Nail', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'Nail Polish', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
+          { name: 'You Nails', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
         ].map((item, index) => (
           <div key={index} className="favorite">
             <img src={item.logo} alt={item.name} className="favorite-logo" />

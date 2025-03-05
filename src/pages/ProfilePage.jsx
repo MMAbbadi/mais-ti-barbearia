@@ -1,6 +1,8 @@
 import React from 'react'
 import Calendar from 'react-calendar'
-import classes from './Appointment.module.css'
+
+// Styles
+import classes from './ProfilePage.module.css'
 
 export default function Appointment() {
   return (

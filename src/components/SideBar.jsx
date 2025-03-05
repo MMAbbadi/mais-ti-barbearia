@@ -1,15 +1,22 @@
 import React from 'react'
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SideBar.css'
+
+// Components
 import { FaHome,FaBook,FaConciergeBell,FaHeart,FaShoppingBag  } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
-import { BiSolidShoppingBagAlt,BiExit } from "react-icons/bi";
+import { BiExit } from "react-icons/bi";
+
+// Styles
+import './SideBar.css'
 
 const SideBar = () => {
+
     const navigate = useNavigate()
     const toHome = () => navigate('/')
     const toFavos = () => navigate('/favorites')
-    const toAppoint = () => navigate('/appointment')
+    const toProfile = () => navigate('/profilepage', {state: {type: "User"}})
+
   return (
     <>
     {/* SideBar */}
@@ -29,7 +36,7 @@ const SideBar = () => {
                         <li className="item" onClick={toHome}>
                             <FaHome />
                         </li>
-                        <li className="item" onClick={toAppoint}>
+                        <li className="item" onClick={toProfile}>
                             <FaConciergeBell />
                         </li>
                         <li className="item">

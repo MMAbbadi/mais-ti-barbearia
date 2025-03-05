@@ -1,11 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SimpleSlider from '../components/SimpleSlider';
 import { FaMapMarkerAlt, FaConciergeBell, FaStar } from "react-icons/fa";
 import { BiSolidDiscount, BiSolidGrid, BiHappyHeartEyes } from "react-icons/bi";
 import './Home.css';
 
 const Home = () => {
+  const navigate = useNavigate()
+
+
   return (
     <div>
       <main className="app-container">
@@ -29,7 +32,7 @@ const Home = () => {
 
         {/* Categorias */}
         <div className="categories">
-          <button>
+          <button onClick={() => navigate('/profilepage', {state: {type: "service"}})}>
             <FaMapMarkerAlt />
             <p>Ao Redor</p>
           </button>
