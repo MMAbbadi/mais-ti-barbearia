@@ -30,34 +30,6 @@ const Home = () => {
           <SimpleSlider />
         </div>
 
-        {/* Categorias */}
-        <div className="categories">
-          <button onClick={() => navigate('/profilepage', {state: {type: "service"}})}>
-            <FaMapMarkerAlt />
-            <p>Ao Redor</p>
-          </button>
-          <button>
-            <BiSolidDiscount />
-            <p>Promoção</p>
-          </button>
-          <button>
-            <FaConciergeBell />
-            <p>Novos</p>
-          </button>
-          <button>
-            <BiHappyHeartEyes />
-            <p>Best Seller</p>
-          </button>
-          <button>
-            <FaStar />
-            <p>Top Avaliação</p>
-          </button>
-          <button>
-            <BiSolidGrid />
-            <p>Tudo</p>
-          </button>
-        </div>
-
         {/* Lista de itens */}
         <div className="item-list">
           {[
