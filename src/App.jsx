@@ -3,7 +3,6 @@ import { Routes, Route} from 'react-router-dom';
 
 // Pages
 import Home from "./pages/Home";
-import Favorites from "./pages/Favorites"
 import ProfilePage from "./pages/ProfilePage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -14,7 +13,6 @@ import Footer from "./components/Footer";
 
 // Styles
 import "./App.css";
-
 
 const App = () => {
   return (

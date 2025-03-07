@@ -29,27 +29,6 @@ const Home = () => {
         <div className="carousel">
           <SimpleSlider />
         </div>
-
-        {/* Lista de itens */}
-        <h2>Estabelecimentos</h2>
-        <div className="item-list">
-          {[
-            { name: 'Barber', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'RH Barbearia', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'A Barbearia', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'Lisboa Barbearia', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'Barbearia Premium', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'Ariel Lima Nail', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'Nail Polish', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-            { name: 'You Nails', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
-          ].map((item, index) => (
-            <div key={index} className="item">
-              <img src={item.logo} alt={item.name} className="item-logo" />
-              <p>{item.name}</p>
-               {/* <button className="favorite-button">❤️</button> */}
-            </div>
-          ))}
-        </div>
       </main>
     </div>
   );
