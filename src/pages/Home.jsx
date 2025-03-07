@@ -44,7 +44,7 @@ const Home = () => {
             showBullets={false}
             showNavs={true}
             loop={true}
-            bgColor={"#0000"}
+            bgColor={"#000000"}
           />
         </div>
 
