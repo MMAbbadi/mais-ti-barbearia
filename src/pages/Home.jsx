@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import SimpleSlider from '../components/SimpleSlider';
+import SimpleImageSlider from "react-simple-image-slider";
 import { FaMapMarkerAlt, FaConciergeBell, FaStar } from "react-icons/fa";
 import { BiSolidDiscount, BiSolidGrid, BiHappyHeartEyes } from "react-icons/bi";
 import './Home.css';
+
 
 const Home = () => {
   const navigate = useNavigate()

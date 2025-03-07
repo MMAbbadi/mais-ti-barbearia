@@ -1,9 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
+import SimpleImageSlider from "react-simple-image-slider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // https://react-slick.neostack.com/docs/api
+
+
 
 export default function SimpleSlider() {
   var settings = {
@@ -14,19 +16,24 @@ export default function SimpleSlider() {
     slidesToScroll: 1,
     arrows: true,
   };
+
+  const images = [
+    { url: "https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg" },
+    { url: "images/2.jpg" },
+    { url: "images/3.jpg" },
+    { url: "images/4.jpg" },
+    { url: "images/5.jpg" },
+    { url: "images/6.jpg" },
+    { url: "images/7.jpg" },
+  ];
+  
   return (
-    <Slider {...settings} >
-      <div>
-      <img
-        src="https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg"
-        alt="Carrossel 1"
-        className="carousel-image"
-        />
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      
-    </Slider>
+    <SimpleImageSlider
+        width={896}
+        height={504}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
   );
 }
