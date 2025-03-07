@@ -38,11 +38,13 @@ const Home = () => {
         {/* Carrossel de imagens */}
         <div className="carousel">
           <SimpleImageSlider
-            width={896}
-            height={504}
+            width={1200}
+            height={630}
             images={images}
-            showBullets={true}
+            showBullets={false}
             showNavs={true}
+            loop={true}
+            bgColor={"#0000"}
           />
         </div>
 
