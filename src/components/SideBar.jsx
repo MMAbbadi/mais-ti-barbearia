@@ -30,17 +30,11 @@ const SideBar = () => {
                         <li className="item">
                             <IoIosMenu />
                         </li>
-                        <li className="item" onClick={toFavos}>
-                            <FaHeart />
-                        </li>
                         <li className="item" onClick={toHome}>
                             <FaHome />
                         </li>
                         <li className="item" onClick={toProfile}>
                             <FaConciergeBell />
-                        </li>
-                        <li className="item">
-                            <FaBook />
                         </li>
                     </ul>
                 </nav>
