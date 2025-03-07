@@ -5,6 +5,15 @@ import { FaMapMarkerAlt, FaConciergeBell, FaStar } from "react-icons/fa";
 import { BiSolidDiscount, BiSolidGrid, BiHappyHeartEyes } from "react-icons/bi";
 import './Home.css';
 
+const images = [
+  { url: "https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg" },
+  { url: "images/2.jpg" },
+  { url: "images/3.jpg" },
+  { url: "images/4.jpg" },
+  { url: "images/5.jpg" },
+  { url: "images/6.jpg" },
+  { url: "images/7.jpg" },
+];
 
 const Home = () => {
   const navigate = useNavigate()
@@ -28,7 +37,13 @@ const Home = () => {
 
         {/* Carrossel de imagens */}
         <div className="carousel">
-          <SimpleSlider />
+          <SimpleImageSlider
+            width={896}
+            height={504}
+            images={images}
+            showBullets={true}
+            showNavs={true}
+          />
         </div>
 
         {/* Banner sobre*/}
