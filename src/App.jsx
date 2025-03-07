@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Favorites from "./pages/Favorites"
 import ProfilePage from "./pages/ProfilePage";
 import Register from "./pages/Register";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 
 // Components
 import SideBar from "./components/SideBar";

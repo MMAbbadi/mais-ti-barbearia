@@ -4,7 +4,7 @@ import Calendar from 'react-calendar'
 // Styles
 import classes from './ProfilePage.module.css'
 
-export default function Appointment() {
+export default function ProfilePage() {
   return (
     <div>
         <main className='app-container'>

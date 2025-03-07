@@ -31,6 +31,7 @@ const Home = () => {
         </div>
 
         {/* Lista de itens */}
+        <h2>Estabelecimentos</h2>
         <div className="item-list">
           {[
             { name: 'Barber', logo: 'https://www.shutterstock.com/image-vector/barbershop-logo-vintage-classic-style-600w-1526776814.jpg' },
