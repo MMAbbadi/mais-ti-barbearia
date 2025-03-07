@@ -34,7 +34,7 @@ const Home = () => {
         <div className="cta">
           <h3>Atendimento onde você estiver!</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia cumque ea dolorum explicabo reiciendis amet necessitatibus velit, maxime repudiandae tempore sapiente adipisci. Similique ipsum maiores commodi quae error facere!</p>
-          <button onClick={isLoged && user == "service" ? () => navigate('/profilepage') : () => navigate('/login')}>AGENDE JÁ!</button>
+          <button onClick={{/*isLoged && user == "service" ? () => navigate('/profilepage') : () => navigate('/login')*/}}>AGENDE JÁ!</button>
         </div>
       </main>
     </div>
