@@ -17,7 +17,7 @@ const Home = () => {
           <input
             type="text" 
             className="search-bar"
-            placeholder="O que Você Está Procurando?"
+            placeholder="O que você está procurando?"
           />
           <div className="header-buttons">
             <Link to="/register" className="register-button">Cadastro</Link>
@@ -28,6 +28,13 @@ const Home = () => {
         {/* Carrossel de imagens */}
         <div className="carousel">
           <SimpleSlider />
+        </div>
+
+        {/* Banner sobre*/}
+        <div className="cta">
+          <h3>Atendimento onde você estiver!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia cumque ea dolorum explicabo reiciendis amet necessitatibus velit, maxime repudiandae tempore sapiente adipisci. Similique ipsum maiores commodi quae error facere!</p>
+          <button onClick={isLoged && user == "service" ? () => navigate('/profilepage') : () => navigate('/login')}>AGENDE JÁ!</button>
         </div>
       </main>
     </div>
