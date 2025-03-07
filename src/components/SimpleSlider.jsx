@@ -18,7 +18,7 @@ export default function SimpleSlider() {
     <Slider {...settings} >
       <div>
       <img
-        src="https://via.placeholder.com/600x200"
+        src="https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg"
         alt="Carrossel 1"
         className="carousel-image"
         />

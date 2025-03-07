@@ -27,9 +27,6 @@ const SideBar = () => {
             <div>
                 <nav>
                     <ul className="items">
-                        <li className="item">
-                            <IoIosMenu />
-                        </li>
                         <li className="item" onClick={toHome}>
                             <FaHome />
                         </li>
