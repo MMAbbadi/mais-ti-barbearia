@@ -7,12 +7,7 @@ import './Home.css';
 
 const images = [
   { url: "https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg" },
-  { url: "images/2.jpg" },
-  { url: "images/3.jpg" },
-  { url: "images/4.jpg" },
-  { url: "images/5.jpg" },
-  { url: "images/6.jpg" },
-  { url: "images/7.jpg" },
+  { url: "images/2.jpg" }
 ];
 
 const Home = () => {
@@ -45,6 +40,8 @@ const Home = () => {
             showNavs={true}
             loop={true}
             bgColor={"#000000"}
+            autoPlay={true}
+            autoPlayDelay={3.0}
           />
         </div>
 
