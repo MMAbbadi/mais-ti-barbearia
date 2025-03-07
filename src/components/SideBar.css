@@ -2,14 +2,14 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
   color: white;
 }
   
 .logo {
-  font-size: 24px;
+  font-size: 27px;
   margin: 20px 0;
   cursor: pointer;
 }

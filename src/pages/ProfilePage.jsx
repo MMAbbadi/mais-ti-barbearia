@@ -2,7 +2,8 @@ import React from 'react'
 import Calendar from 'react-calendar'
 
 // Styles
-import classes from './ProfilePage.module.css'
+import classes from './ProfilePage.module.css';
+import 'react-calendar/dist/Calendar.css';  
 
 export default function ProfilePage() {
   return (
