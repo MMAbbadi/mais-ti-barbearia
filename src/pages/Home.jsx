@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import SimpleImageSlider from "react-simple-image-slider";
-import { FaMapMarkerAlt, FaConciergeBell, FaStar } from "react-icons/fa";
-import { BiSolidDiscount, BiSolidGrid, BiHappyHeartEyes } from "react-icons/bi";
-import './Home.css';
+import  classes from './Home.module.css';
 
 const images = [
   { url: "https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg" },
@@ -16,24 +14,24 @@ const Home = () => {
 
   return (
     <div>
-      <main className="app-container">
+      <main className={classes.appContainer}>
         {/* Barra de busca e botões de cadastro/login */}
-        <header className="header">
+        <header className={classes.header}>
           <input
             type="text" 
-            className="search-bar"
+            className={classes.seachBar}
             placeholder="O que você está procurando?"
           />
-          <div className="header-buttons">
-            <Link to="/register" className="register-button">Cadastro</Link>
-            <Link to="/login" className="login-button">Login</Link>
+          <div className={classes.headerButtons}>
+            <Link to="/register" className={classes.registerButton}>Cadastro</Link>
+            <Link to="/login" className={classes.loginButton}>Login</Link>
           </div>
         </header>
 
         {/* Carrossel de imagens */}
-        <div className="carousel">
+        <div className={classes.carousel}>
           <SimpleImageSlider
-            width={1200}
+            width={1760}
             height={630}
             images={images}
             showBullets={false}
@@ -46,11 +44,24 @@ const Home = () => {
         </div>
 
         {/* Banner sobre*/}
-        <div className="cta">
-          <h3>Atendimento onde você estiver!</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia cumque ea dolorum explicabo reiciendis amet necessitatibus velit, maxime repudiandae tempore sapiente adipisci. Similique ipsum maiores commodi quae error facere!</p>
-          <button onClick={{/*isLoged && user == "service" ? () => navigate('/profilepage') : () => navigate('/login')*/}}>AGENDE JÁ!</button>
+        <div className={classes.cta}>
+          <section className={classes.container}>
+            <h3>Atendimento onde você estiver!</h3>
+            <p>Temos uma equipe qualificada a disposição e com disponibilidade de te atender no conforto da sua casa. <br />
+            Ou caso prefira, lhe atendemos em nosso espaço dedicado, garantindo conforto e qualidade no atendimento. <br />
+            Somos equipados com os conhecimentos e tecnincas mais avançadas no mercado para proporcionar a melhor experiencia <br />e praticidade.
+            </p>
+          </section>
+          <button onClick={() => navigate('/login')}>AGENDE JÁ!</button>
         </div>
+        <div className={classes.about}>
+          <div className={classes.container2}>
+            <h3>CONHEÇA NOSSA HISTORIA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem at minus quisquam accusantium quibusdam accusamus doloribus alias voluptate facilis modi sed perspiciatis sapiente, saepe sint, fugiat autem quod explicabo tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi autem quae maiores neque non quis cum iste laboriosam, asperiores nobis distinctio quibusdam sed, accusamus, illum vel tenetur dolorum. Quidem, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi blanditiis sed delectus ex a temporibus quaerat deserunt, harum ducimus illo deleniti, molestiae nam optio incidunt quasi ab est quas.</p>
+          </div>
+        </div>
+
+        <br />
       </main>
     </div>
   );

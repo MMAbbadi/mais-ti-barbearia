@@ -21,14 +21,14 @@ const App = () => {
         <SideBar />
       </aside>
       <main>
-          <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/profilepage" element={<ProfilePage />}/>
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login/>}/>
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/profilepage" element={<ProfilePage />}/>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login/>}/>
+        </Routes>   
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

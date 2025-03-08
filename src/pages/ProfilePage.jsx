@@ -23,7 +23,9 @@ export default function ProfilePage() {
                 </section>
 
                 <section className={classes.calendario}> 
-                    <Calendar />
+                    <Calendar 
+                    width = {200}
+                    />
                 </section>
 
             </div>
