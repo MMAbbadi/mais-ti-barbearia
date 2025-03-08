@@ -15,6 +15,7 @@
   background-color: #fff;
   display: flex;
   justify-content: space-around;
+  gap: 15px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -33,7 +34,7 @@
 
 /* Caixa de busca */
 .searchBar {
-  width: 70%;
+  width: 65%;
   height: 40px;
   padding: 10px;
   font-size: 16px;
@@ -68,6 +69,7 @@
 .registerButton:hover,
 .loginButton:hover {
   background-color: #0056b3;
+  color: #ddd;
 }
 
 .searchBar {
