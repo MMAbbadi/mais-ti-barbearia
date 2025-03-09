@@ -1,0 +1,19 @@
+.backdrop{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: -40px;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 450px;
+    height: 550px;
+    position: relative;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+}
