@@ -18,7 +18,7 @@ export default function ProfilePage() {
             <div className={classes.main}>
                 <section className={classes.sobreLoja}>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni obcaecati dolor, harum magnam ad, facere dolore at facilis perspiciatis, esse iusto modi sequi corrupti distinctio saepe culpa! Itaque, aliquam?</p>
-                    <h4>Tipo de atendimento: </h4>
+                    <h4>Tipo de atendimento: Seg.  a Sex. <br /> da</h4>
                     <h4>Horarios: </h4>
                 </section>
 
