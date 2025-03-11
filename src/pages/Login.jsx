@@ -1,28 +1,52 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEnvelope, FaLock, FaUserCircle } from 'react-icons/fa';
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate(); // Hook para redirecionamento
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Login:', { email, password });
+    setError(''); // Limpa erros anteriores
+
+    try {
+      const response = await fetch('http://localhost:8080/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: email, password }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Falha ao autenticar. Verifique suas credenciais.');
+      }
+
+      const data = await response.json();
+      localStorage.setItem('token', data.acessToken); // Armazena o token
+      console.log('Login bem-sucedido!', data);
+
+      navigate('/home'); // Redireciona para a página principal
+    } catch (error) {
+      setError(error.message);
+    }
   };
 
   return (
     <div className="login-container">
       <div className="login-box">
-        {/* Logotipo da Barbearia */}
         <div className="logo-container">
           <FaUserCircle size={60} color="white" />
           <h2>Barbearia Elite</h2>
         </div>
 
+        {error && <p className="error-message">{error}</p>} {/* Exibe erros */}
+
         <form onSubmit={handleSubmit}>
-          {/* Campo de e-mail com ícone */}
           <div className="input-group">
             <label><FaEnvelope /> Email</label>
             <input
@@ -34,7 +58,6 @@ const Login = () => {
             />
           </div>
 
-          {/* Campo de senha com ícone */}
           <div className="input-group">
             <label><FaLock /> Senha</label>
             <input
@@ -46,11 +69,9 @@ const Login = () => {
             />
           </div>
 
-          {/* Botão de login estilizado */}
           <button type="submit" className="login-button">Entrar</button>
         </form>
 
-        {/* Link de cadastro mais estilizado */}
         <p className="register-text">
           Ainda não tem conta? <Link to="/register">Cadastre-se</Link>
         </p>
