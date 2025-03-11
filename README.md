@@ -31,12 +31,12 @@ Este projeto visa otimizar os processos internos das barbearias, oferecendo uma 
 • **<ins>FontAwesome</ins>**: Biblioteca de ícones para melhorar a interface do usuário.\
 
 ## 💻 Acesso ao Projeto
-# Para clonar o repositório, utilize o seguinte comando:
+### Para clonar o repositório, utilize o seguinte comando:
 ```
 git clone https://github.com/MMAbbadi/mais-ti-barbearia.git
 cd mais-ti-barbearia
 ```
-# Instale as dependencias e rode o projeto:
+### Instale as dependencias e rode o projeto:
 ```
 npm install
 npm run dev
