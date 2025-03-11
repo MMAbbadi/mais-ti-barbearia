@@ -44,6 +44,6 @@ O backend da aplicação está disponível no repositório separado. Acesse o re
 • FontAwesome: Biblioteca de ícones para melhorar a interface do usuário.
 
 ## Autores
-• Matheus Mayan Abbadi
-• Bruno Malgrejo
+• Matheus Mayan Abbadi;
+• Bruno Malgrejo;
 • Marcelo Henrique Bastos Rodrigues
