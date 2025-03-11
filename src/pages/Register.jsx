@@ -102,19 +102,22 @@ const Register = () => {
 
           {/* Checkbox para prestador de serviço */}
           <div className="input-group">
-            <label>
-              <input
-                type="checkbox"
-                name="serviceProvider"
-                checked={formData.serviceProvider}
-                onChange={handleChange}
-              />
-              Sou um prestador de serviço
-            </label>
+            <label>Tipo de usuário:</label>
+            <select
+              name="userType"
+              value={formData.userType}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Selecione</option>
+              <option value="cliente">Cliente</option>
+              <option value="barbeiro">Barbeiro</option>
+            </select>
           </div>
 
+
           {/* Inputs extras aparecem se for prestador de serviço */}
-          {formData.serviceProvider && (
+          {formData.userType === "barbeiro" && (
             <>
               <div className="input-group">
                 <label>Atende a domicílio?</label>
