@@ -50,7 +50,7 @@ O backend da aplicação está disponível no repositório separado. Acesse o re
 ```
 mais-ti-barbearia/
 │── src/
-│   ├── assets/         # Controllers da API
+│   ├── assets/         # Imagens e itens para compor a pagina
 │   ├── components/     # Modulos individuais reutilizaveis
 │   ├── pages/          # Paginas navegaveis pelo React-router-dom
 │   ├── App.css/        # Estilos Globais da Aplicação
