@@ -60,6 +60,6 @@ mais-ti-barbearia/
 ```
 
 ## 👨👩 Autores
-• Matheus Mayan Abbadi;\
-• Bruno Malgrejo;\
-• Marcelo Henrique Bastos Rodrigues
+• [Matheus Mayan Abbadi](https://github.com/MMAbbadi);\
+• [Bruno Malgrejo](https://github.com/Melgarejo42);\
+• [Marcelo Henrique Bastos Rodrigues](https://github.com/MarclHenrique)
