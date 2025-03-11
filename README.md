@@ -14,9 +14,9 @@ O Mais TI Barbearia é uma aplicação desenvolvida para gerenciar os serviços 
 Este projeto visa otimizar os processos internos das barbearias, oferecendo uma experiência mais eficiente tanto para os clientes quanto para os funcionários.
 
 ## 🚀 Funcionalidades
-• Cadastro de clientes: Facilita a gestão de informações dos clientes da barbearia.\
-• Agendamento de serviços: Permite que os clientes agendem horários para os serviços oferecidos.\
-• Gerenciamento de funcionários: Organiza e gerencia os funcionários da barbearia.
+• **<ins>Cadastro de clientes</ins>**: Facilita a gestão de informações dos clientes da barbearia.\
+• **<ins>Agendamento de serviços</ins>**: Permite que os clientes agendem horários para os serviços oferecidos.\
+• **<ins>Gerenciamento de funcionários</ins>**: Organiza e gerencia os funcionários da barbearia.
 
 ## 💻 Tecnologias Utilizadas
 • **<ins>React</ins>**: Biblioteca para construção da interface do usuário.\
